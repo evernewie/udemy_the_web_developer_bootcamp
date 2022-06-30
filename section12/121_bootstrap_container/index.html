@@ -15,32 +15,93 @@
     </head>
     <body>
         <div class="container">
-            <h1 class="display-1 text-center text-primary">display-1 text-primary</h1>
-            <h2 class="display-4">Button</h2>
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-success">Success</button>
-            <button type="button" class="btn btn-success" disabled>Success</button>
-            <button type="button" class="btn btn-info">Info</button>
-            <button class="btn btn-outline-warning">Warning Outline</button>
-            <button class="btn btn-outline-danger">Danger Outline</button>
-            <button class="btn btn-outline-info btn-lg">Info Outline</button>
-            <button class="btn btn-secondary btn-sm">Small Outline</button>
+            <h1 class="text-center text-primary">Badge</h1>
+            <h2>Buttons <span class="badge badge-success">new</span></h2>
 
-            <h2 class="display-4">Typograph</h2>
-            <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae quod maxime consectetur vitae.
-                Omnis dolore eaque, eveniet repellat hic quidem eius aliquid adipisci, voluptatum dignissimos eligendi
-                aspernatur, culpa repudiandae.
-            </p>
+            <button class="btn btn-primary">Updates <span class="badge badge-warning">3</span></button>
+            <br />
+            <button class="btn btn-warning">
+                新たなメッセージ <span class="badge badge-pill badge-info">+10</span>
+            </button>
 
-            <blockquote class="blockquote text-right bg-info">
-                <p class="mb-0">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel omnis reprehenderit unde pariatur
-                    molestiae ab facilis eum ullam optio, error aliquam, distinctio libero odit tempore similique, ut
-                    autem delectus itaque.
+            <h1 class="text-center text-primary">Button Group</h1>
+            <h2>Role: group</h2>
+            <div class="btn-group mb-4" role="group" aria-label="sample button group">
+                <button type="button" class="btn btn-success">左</button>
+                <button type="button" class="btn btn-warning">中央</button>
+                <button type="button" class="btn btn-info">右</button>
+            </div>
+
+            <h2>Role: tool-bar</h2>
+            <div class="btn-toolbar mb-4" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-info">1</button>
+                    <button type="button" class="btn btn-info">2</button>
+                    <button type="button" class="btn btn-info">3</button>
+                    <button type="button" class="btn btn-info">4</button>
+                </div>
+                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btn-warning">5</button>
+                    <button type="button" class="btn btn-warning">6</button>
+                    <button type="button" class="btn btn-warning">7</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="Third group">
+                    <button type="button" class="btn btn-secondary">8</button>
+                </div>
+            </div>
+            <div
+                class="btn-toolbar justify-content-between mb-4"
+                role="toolbar"
+                aria-label="Toolbar with button groups"
+            >
+                <div class="btn-group" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-secondary">1</button>
+                    <button type="button" class="btn btn-secondary">2</button>
+                    <button type="button" class="btn btn-secondary">3</button>
+                    <button type="button" class="btn btn-secondary">4</button>
+                </div>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text" id="btnGroupAddon2">@</div>
+                    </div>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Input group example"
+                        aria-label="Input group example"
+                        aria-describedby="btnGroupAddon2"
+                    />
+                </div>
+            </div>
+
+            <h1 class="text-center text-primary">Alert</h1>
+            <div class="alert alert-dark mb-4" role="alert">alert dark クリック</div>
+            <div class="alert alert-danger" role="alert">alert danger クリック</div>
+            <h2>Alert Header</h2>
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">alert ヘッダー</h4>
+                <p>
+                    Aww yeah, you successfully read this important alert message. This example text is going to run a
+                    bit longer so that you can see how spacing within an alert works with this kind of content.
                 </p>
-                <footer class="blockquote-footer">Mr. Lorem Ipsum</footer>
-            </blockquote>
+                <hr />
+                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+            </div>
+            <h2>Alert Dismiss</h2>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">
+                    alert ヘッダー
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </h4>
+                <p>
+                    Aww yeah, you successfully read this important alert message. This example text is going to run a
+                    bit longer so that you can see how spacing within an alert works with this kind of content.
+                </p>
+                <hr />
+                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+            </div>
         </div>
         <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
